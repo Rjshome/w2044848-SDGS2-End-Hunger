@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNSDGS Zero Hunger - Gallery (Student 4)</title>
+    <link rel = "stylesheet" href = "styles.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ol>
+                <li><img src = "earth.svg" alt = "website logo of earth" style = "width:30px"></li>
+                <li style = "color:rgb(25, 55, 80); margin-left: 5px;" class = "header_links"><b>UNDGS - ZERO HUNGER</b></li>
+                <li class = "header_links"><a href="https://w2044848.users.ecs.westminster.ac.uk/CWK/content_ST4.html">Content (ST 4)</a></li>
+                <li class = "header_links"><a href="https://w2044848.users.ecs.westminster.ac.uk/CWK/gallery.html">Gallery</a></li>
+                <li class = "header_links"><a href="https://w2044848.users.ecs.westminster.ac.uk/CWK/sitemap.html">Site Map</a></li>
+                <li class = "header_links"><a href="https://w2044848.users.ecs.westminster.ac.uk/CWK/pageEditor_ST4.html" target = "_blank">Page Editor (ST 4)</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class = "title">Gallery</h1>
+        <h2 class = "title">UNSDGS - Zero Hunger</h2>
+
+        <div id = "large_gallery_display">
+            <div id = "format_options">
+            <p>CANVAS COLORS:</p>
+
+            <svg width="4vw" height="4vh" viewBox="0 0 100 100" onmouseover = "mouseoverOutline(this);" onmouseout = "onmouseoutRemoveOutline(this)" onclick = "changeGalleryBlue();">
+                <rect width="100" height="100" fill="rgb(25,55,80)" stroke="black" ></rect>
+            </svg>
+            <svg width="4vw" height="4vh" viewBox="0 0 100 100" onmouseover = "mouseoverOutline(this);" onmouseout = "onmouseoutRemoveOutline(this)" onclick = "changeGalleryDarkBlue();">
+                <rect width="100" height="100" fill="rgb(10,40,60)" stroke="black"></rect>
+            </svg>
+            <svg width="4vw" height="4vh" viewBox="0 0 100 100" onmouseover = "mouseoverOutline(this);" onmouseout = "onmouseoutRemoveOutline(this)" onclick="changeGalleryGrey();">
+                <rect width="100" height="100" fill="rgb(95,95,95)" stroke="black"></rect>
+            </svg>
+            <svg width="4vw" height="4vh" viewBox="0 0 100 100" onmouseover="mouseoverOutline(this);" onmouseout="onmouseoutRemoveOutline(this)" onclick="changeGalleryRandom();">
+                <rect width="100" height="100" fill="white" stroke="black"></rect>
+                <text x="12" y="60" font-family="Arial, Helvetica, sans-serif" font-size="40" fill="grey" font-weight="bold">Any</text>
+            </svg>
+            <p>FONTS:</p>
+            <p style = "font-family: Arial, Helvetica, sans-serif;" onmouseover = "mouseoverOutline(this);" onmouseout = "onmouseoutRemoveOutline(this)" onclick = "changeFontArial();">Large</p>
+            <p style = "font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" onmouseover = "mouseoverOutline(this);" onmouseout = "onmouseoutRemoveOutline(this)" onclick = "changeFontCambria();">Small</p>
+            </div>
+            
+            <img src = "gallery1.svg" id = "full_image" alt = "United Nations Sustainability Goal Zero Hunger, with an image of carrots and a tomato (orange background)">
+            <div class = "description" id = "description">
+                <h3 class = "changeable_font">Gallery 1 - Fruits</h3>
+                <p class = "changeable_font">United Nations Sustainability Goal Zero Hunger, with an image of carrots and a tomato (orange background).</p>
+                <p class = "changeable_font">Images created by w2044848. Free to distribute.</p>
+            </div>
+            <p style="align-self: flex-start; margin-right: 10px;" onmouseover = "mouseoverOutline(this);" onmouseout = "onmouseoutRemoveOutline(this)" onclick = "changeVisibilityOff()">Close</p>
+        </div>
+
+        <div class = "thumbnail_group">
+            <img src = "gallery1.svg" class = "thumbnail" id = "thumbnail1" alt = "United Nations Sustainability Goal Zero Hunger, with an image of carrots and a tomato (orange background)" onclick = "changeToBigImage(this.src, this.alt); changeDescription(0); changeVisibility()" onmouseover = "mouseoverOutline(this);" onmouseout = "onmouseoutRemoveOutline(this)">
+            <img src = "gallery2.svg" class = "thumbnail" id = "thumbnail2" alt = "United Nations Sustainability Goal Zero Hunger, with an image of bread and wheat (brown background)" onclick = "changeToBigImage(this.src, this.alt); changeDescription(1); changeVisibility()" onmouseover = "mouseoverOutline(this);" onmouseout = "onmouseoutRemoveOutline(this)">
+            <img src = "gallery3.svg" class = "thumbnail" id = "thumbnail3" alt = "United Nations Sustainability Goal Zero Hunger, with an image of a plate with chicken, broccoli and rice (grey background)" onclick = "changeToBigImage(this.src, this.alt); changeDescription(2); changeVisibility()" onmouseover = "mouseoverOutline(this);" onmouseout = "onmouseoutRemoveOutline(this)">
+            <img src = "gallery4.svg" class = "thumbnail" id = "thumbnail4" alt = "United Nations Sustainability Goal Zero Hunger, with an image of a chalkboard stating 'End Hunger'" onclick = "changeToBigImage(this.src, this.alt); changeDescription(3); changeVisibility()" onmouseover = "mouseoverOutline(this);" onmouseout = "onmouseoutRemoveOutline(this)">
+        </div>
+
+        <div class = "thumbnail_group">
+            <img src = "gallery5.svg" class = "thumbnail" id = "thumbnail5" alt = "United Nations Sustainability Goal Zero Hunger, with an image of carrots and a tomato (red background)" onclick = "changeToBigImage(this.src, this.alt); changeDescription(4); changeVisibility();" onmouseover = "mouseoverOutline(this);" onmouseout = "onmouseoutRemoveOutline(this)">
+            <img src = "gallery6.svg" class = "thumbnail" id = "thumbnail6" alt = "United Nations Sustainability Goal Zero Hunger, with an image of bread and wheat (yellow background)" onclick = "changeToBigImage(this.src, this.alt); changeDescription(5); changeVisibility();" onmouseover = "mouseoverOutline(this);" onmouseout = "onmouseoutRemoveOutline(this)">
+            <img src = "gallery7.svg" class = "thumbnail" id = "thumbnail7" alt = "United Nations Sustainability Goal Zero Hunger, with an image of a plate with chicken, broccoli and rice (purple background)" onclick = "changeToBigImage(this.src, this.alt); changeDescription(6);changeVisibility();" onmouseover = "mouseoverOutline(this);" onmouseout = "onmouseoutRemoveOutline(this)">
+            <img src = "gallery8.svg" class = "thumbnail" id = "thumbnail8" alt = "United Nations Sustainability Goal Zero Hunger, with an image of a whiteboard stating 'End Hunger'" onclick = "changeToBigImage(this.src, this.alt); changeDescription(7); changeVisibility();" onmouseover = "mouseoverOutline(this);" onmouseout = "onmouseoutRemoveOutline(this)">
+        </div>
+        <script src = "gallery-script.js"></script>
+        
+    </main>
+
+    <footer>
+        <hr>
+        Last modified: 31 March 2024
+        <address>
+            <sub>Email: <a href="mailto:w2044848@westminster.ac.uk">w2044848</a></sub> </address>
+            <sub><a href = "accessibility.html">Website validation & accessibility reports</a></sub>
+    </footer>
+</body>
+</html>
